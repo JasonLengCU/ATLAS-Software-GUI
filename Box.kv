@@ -1,0 +1,17 @@
+#:kivy 1.11.1
+
+<BoxSquare>:
+    size: 25, 25
+    canvas:
+        Color:
+            rgba: 1, 0, 0, 0.5
+        Rectangle:
+            pos:self.pos
+            size:self.size
+
+<BoxGame>:
+    square: box_square
+
+    BoxSquare:
+        id: box_square
+        center: self.parent.center
