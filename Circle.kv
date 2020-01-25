@@ -1,0 +1,15 @@
+#:kivy 1.11.1
+
+<Circleswitch>:
+    canvas:
+        Color:
+            rgba: self.r, self.g, 0, 1
+        Ellipse:
+            pos: (100,100)
+            size: self.height/5., self.height/5
+<Circles>:
+    allcircles: theonecircle
+    Circleswitch:
+        id: theonecircle
+
+
