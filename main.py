@@ -31,7 +31,7 @@ Builder.load_string('''
                 size: root.width, root.height
         GridLayout:
             id: gridupper
-            pos_hint: {'center_x': .5, 'center_y': .75}
+            size_hint_y: 0.5
             rows:1
             cols:2
             Image:
@@ -44,7 +44,8 @@ Builder.load_string('''
                 allow_stretch: False
         GridLayout:
             id: gridlower
-            pos_hint: {'center_x': .5, 'center_y': .25}
+            size_hint_y: 0.5
+            padding: 10
             rows:1
             cols:3
             Label:
@@ -53,8 +54,8 @@ Builder.load_string('''
                     Color:
                         rgba: 0, 0.4, 0, 1
                     Rectangle:
-                        pos: self.width*.05, Instruct.height*.05  
-                        size: self.width*0.9, self.height*0.9 
+                        pos: self.pos
+                        size: self.width, self.height
                 text: 'Testing GUI\\nEXTREMELY rough testing\\nenvironment for learning Kivy'
                 halign: 'center'
                 color: 0,0,0,1
@@ -66,8 +67,8 @@ Builder.load_string('''
                     Color:
                         rgba: 0, 0, 0.4, 1
                     Rectangle:
-                        pos: self.width*1.05, LSpanel.height*.05
-                        size: self.width*0.9, self.height*0.9  
+                        pos: self.pos
+                        size: self.width, self.height
                 Light:
                     id: L1
             FloatLayout:
@@ -75,9 +76,9 @@ Builder.load_string('''
                 canvas:
                     Color:
                         rgba: 0.4, 0, 0, 1
-                    Rectangle:
-                        pos: self.width*2.05, Panel3.height*.05  
-                        size: self.width*0.9, self.height*0.9 
+                    Rectangle: 
+                        pos: self.pos
+                        size: self.width, self.height
                 AsyncImage:
                     source: 'https://st.depositphotos.com/1902695/4334/i/950/depositphotos_43347351-stock-photo-submarine-control-panel.jpg'
                     pos_hint: {'center_x': .5, 'center_y': .5}
@@ -94,7 +95,10 @@ class MainApp(App):
     def build(self):
         # Window.fullscreen = 'auto'
         self.capture = cv2.VideoCapture(0)
-        Clock.schedule_interval(self.update, 1.0/33.0)
+        self.capture.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+        fps = self.capture.get(cv2.CAP_PROP_FPS)
+
+        Clock.schedule_interval(self.update, 1.0/fps)
         return RootWidget()
 
     def update(self, dt):
@@ -103,8 +107,6 @@ class MainApp(App):
         ret, frame1 = self.capture.read()
         # finds video size for line positioning
         height, width, channels = frame1.shape
-        centx = round(width / 2)
-        centy = round(height / 2)
         frame1 = cv2.rectangle(frame1, pt1=(75, 75), pt2=(width - 75, height - 75), color=(0, 255, 0), thickness=5)
         # flips frame to correct orientation
         buf1 = cv2.flip(frame1, 0)
@@ -119,6 +121,8 @@ class MainApp(App):
         # read in frame
         ret, frame2 = self.capture.read()
         # adds circle to video
+        centx = round(width / 2)
+        centy = round(height / 2)
         cv2.circle(frame2, center=(centx, centy), radius=50, color=(0, 255, 0), thickness=5)
         # flips frame to correct orientation
         buf2 = cv2.flip(frame2, 0)
