@@ -92,14 +92,27 @@ class RootWidget(FloatLayout):
 
 class MainApp(App):
     title = 'Test GUI by Charles'
+    # pforward = False
+
     def build(self):
-        # Window.fullscreen = 'auto'
         self.capture = cv2.VideoCapture(0)
         self.capture.set(cv2.CAP_PROP_BUFFERSIZE, 1)
         fps = self.capture.get(cv2.CAP_PROP_FPS)
-
         Clock.schedule_interval(self.update, 1.0/fps)
         return RootWidget()
+
+    # def __init__(self, **kwargs):
+    #     super(MainApp, self).__init__(**kwargs)
+    #     Window.bind(on_key_up=self._keyup)
+    #     Window.bind(on_key_down=self._keydown)
+    #
+    # def _keyup(self,*args):
+    #     if args[1] == 119:
+    #         self.pfoward = False
+    #
+    # def _keydown(self,*args):
+    #     if args[1] == 119:
+    #         self.pforward = True
 
     def update(self, dt):
         # Camera 1
@@ -134,6 +147,7 @@ class MainApp(App):
         self.root.ids.img2.texture = texture2
 
         self.root.ids.L1.col = random.random(), random.random(), random.random(), 1
+        # print(self.pforward)
 
 
 if __name__ == '__main__':
