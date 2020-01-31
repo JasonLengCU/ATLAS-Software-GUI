@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c5a5958-615e-45bd-b3ad-24dd72768474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client_cv_wc1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_cv_wc2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_mmfpeg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ffmpeg.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box.kv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_cv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_cv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffmpeg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ffmpeg.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +180,19 @@
       <option name="presentableId" value="Default" />
       <updated>1579059654742</updated>
     </task>
+    <task id="LOCAL-00001" summary="FFmpeg testing">
+      <created>1580511783608</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580511783639</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FFmpeg testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="FFmpeg testing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579655001247">
@@ -202,6 +207,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="441" y="256" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1579059784621" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580511781243">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1580511781243" />
     <state x="462" y="127" key="FileChooserDialogImpl" timestamp="1580428580511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -231,6 +240,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="-7" y="0" width="930" height="768" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1580491901540" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1580511798088">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1580511798088" />
     <state x="405" y="297" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580511744024">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
