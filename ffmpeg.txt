@@ -1,0 +1,6 @@
+Early working command
+ffmpeg -f dshow -video_size 320x240 -framerate 30 -pixel_format yuyv422 -i video="Stereo Vision 1" -preset ultrafast -vcodec libx264 -tune zerolatency -f mpegts udp://192.168.1.15:1234
+
+
+Final Working FFmpeg command
+ffmpeg -y -thread_queue_size 5096 -f dshow -video_size 320x240 -framerate 30 -pixel_format yuyv422 -i video="Stereo Vision 1" -vcodec mpeg2video -preset ultrafast -rtbufsize 1024M -tune zerolatency -f mjpeg udp://192.168.43.136:1234

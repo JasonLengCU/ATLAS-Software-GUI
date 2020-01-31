@@ -4,13 +4,34 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5a5958-615e-45bd-b3ad-24dd72768474" name="Default Changelist" comment="" />
+    <list default="true" id="7c5a5958-615e-45bd-b3ad-24dd72768474" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client_cv_wc1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_cv_wc2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_mmfpeg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ffmpeg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box.kv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_cv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_cv.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WPmYuHspO1Z1AvJxC2nCW1ZYWn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +43,96 @@
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Finnbar\Desktop\Projects\Testing\CameraTransmit" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.client_mmfpeg">
+    <configuration name="client_cv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CameraTransmit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client_cv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client_cv_wc1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CameraTransmit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client_cv_wc1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client_cv_wc2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CameraTransmit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client_cv_wc2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client_mmfpeg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CameraTransmit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client_mmfpeg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="server_cv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CameraTransmit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -46,6 +156,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.client_mmfpeg" />
+        <item itemvalue="Python.client_cv_wc1" />
+        <item itemvalue="Python.client_cv_wc2" />
+        <item itemvalue="Python.client_cv" />
         <item itemvalue="Python.server_cv" />
       </list>
     </recent_temporary>
@@ -76,29 +190,60 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579655001247">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1579655001247" />
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580511749476">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1580511749476" />
     <state x="441" y="256" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579059784621">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="441" y="256" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1579059784621" />
-    <state width="661" height="192" key="GridCell.Tab.0.bottom" timestamp="1579116879873">
+    <state x="462" y="127" key="FileChooserDialogImpl" timestamp="1580428580511">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579116879873" />
-    <state width="661" height="192" key="GridCell.Tab.0.center" timestamp="1579116879873">
+    <state x="462" y="127" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1580159077415" />
+    <state x="462" y="127" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1580428580511" />
+    <state width="1345" height="189" key="GridCell.Tab.0.bottom" timestamp="1580494658527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579116879873" />
-    <state width="661" height="192" key="GridCell.Tab.0.left" timestamp="1579116879873">
+    <state width="1345" height="189" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1580159686669" />
+    <state width="1345" height="189" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580494658527" />
+    <state width="1345" height="189" key="GridCell.Tab.0.center" timestamp="1580494658527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579116879873" />
-    <state width="661" height="192" key="GridCell.Tab.0.right" timestamp="1579116879873">
+    <state width="1345" height="189" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1580159686669" />
+    <state width="1345" height="189" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580494658527" />
+    <state width="1345" height="189" key="GridCell.Tab.0.left" timestamp="1580494658526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579116879873" />
-    <state x="184" y="27" key="SettingsEditor" timestamp="1579060320847">
+    <state width="1345" height="189" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1580159686669" />
+    <state width="1345" height="189" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580494658526" />
+    <state width="1345" height="189" key="GridCell.Tab.0.right" timestamp="1580494658527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="27" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1579060320847" />
+    <state width="1345" height="189" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1580159686669" />
+    <state width="1345" height="189" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580494658527" />
+    <state x="-7" y="0" width="930" height="768" key="SettingsEditor" timestamp="1580491901540">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="-7" y="0" width="930" height="768" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1580491901540" />
+    <state x="405" y="297" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580511744024">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="405" y="297" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1580511744024" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GUIreceive.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
