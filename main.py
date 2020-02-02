@@ -42,6 +42,9 @@ class CircleApp(App):
          self.root.ids.L8bot.col = 1, 0, 0, 1
          self.root.ids.L9left.col = 1, 0, 0, 1
          self.root.ids.L10right.col = 1, 0, 0, 1
+        # Hall Limits
+         self.root.ids.H1right.col = 1, 0, 0, 1
+         self.root.ids.H2left.col = 1, 0, 0, 1
     def turngreen(self, dt):
         # Extension 7 Transverse Limits
          self.root.ids.L1.col = 0, 1, 0, 1
@@ -56,6 +59,10 @@ class CircleApp(App):
          self.root.ids.L8bot.col = 0, 1, 0, 1
          self.root.ids.L9left.col = 0, 1, 0, 1
          self.root.ids.L10right.col = 0, 1, 0, 1
+        # Hall Limits
+         self.root.ids.H1right.col = 0, 1, 0, 1
+         self.root.ids.H2left.col = 0, 1, 0, 1
+
 
 
 if __name__ == '__main__':  # runs main.py first
