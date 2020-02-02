@@ -29,17 +29,33 @@ class CircleApp(App):
         return RootWidget()
 
     def change(self, dt):
+        # Extension 7 Transverse Limits
          self.root.ids.L1.col = 1, 0, 0, 1
          self.root.ids.L2.col = 1, 0, 0, 1
          self.root.ids.L3.col = 1, 0, 0, 1
          self.root.ids.L4.col = 1, 0, 0, 1
+        # Vertical Frame Limits
+         self.root.ids.L5top.col = 1, 0, 0, 1
+         self.root.ids.L6bot.col = 1, 0, 0, 1
+        # Back Plate Limits
+         self.root.ids.L7top.col = 1, 0, 0, 1
+         self.root.ids.L8bot.col = 1, 0, 0, 1
+         self.root.ids.L9left.col = 1, 0, 0, 1
+         self.root.ids.L10right.col = 1, 0, 0, 1
     def turngreen(self, dt):
+        # Extension 7 Transverse Limits
          self.root.ids.L1.col = 0, 1, 0, 1
          self.root.ids.L2.col = 0, 1, 0, 1
          self.root.ids.L3.col = 0, 1, 0, 1
          self.root.ids.L4.col = 0, 1, 0, 1
-
-
+        # Vertical Frame Limits
+         self.root.ids.L5top.col = 0, 1, 0, 1
+         self.root.ids.L6bot.col = 0, 1, 0, 1
+        # Back Plate Limits
+         self.root.ids.L7top.col = 0, 1, 0, 1
+         self.root.ids.L8bot.col = 0, 1, 0, 1
+         self.root.ids.L9left.col = 0, 1, 0, 1
+         self.root.ids.L10right.col = 0, 1, 0, 1
 
 
 if __name__ == '__main__':  # runs main.py first
