@@ -1,0 +1,226 @@
+#:kivy 1.11.1
+
+<Circleswitch@Widget>:
+    col: 0,1,0,1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Ellipse:
+            size: self.width*.1, self.width*.1
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+
+<Brackets@Widget>:
+    col: 0,0,0,1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Rectangle:
+            size: self.width/15, self.width/2
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+<Extension@Widget>:
+    col: .9,.9,.9,1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Rectangle:
+            size: self.width/15, self.width/2
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+<Transverse@Widget>:
+    col: .6,.6,.6,1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Rectangle:
+            size: self.width/2.05, self.width/4
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+<Hole@Widget>:
+    col: 0, .37, .45, 1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Ellipse:
+            size: self.width*.2, self.width*.2
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+
+<Vertical@Widget>:
+    col: .6,.6,.6,1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Rectangle:
+            size: self.width/6, self.width/2
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+
+<Backplate@Widget>:
+    col: .6,.6,.6,1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Ellipse:
+            size: self.width*.6, self.width*.6
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+<Hall@Widget>:
+    col: 0,1,0,1
+    canvas.before:
+        Color:
+            rgba: self.col
+        Rectangle:
+            size: self.width*.1, self.width*.1
+            pos: self.center_x - self.width/10, self.center_y - self.width/10
+
+<GUIWidget>
+    GridLayout:
+        id: gridframe
+        rows: 2
+        cols: 1
+        canvas:
+            Color:
+                rgba: 0.8, 0.8, 0.8, 1
+            Rectangle:
+                pos: self.pos
+                size: root.width, root.height
+        GridLayout:
+            id: gridupper
+            size_hint_y: 0.5
+            rows:1
+            cols:2
+            Image:
+                id: img1
+                source: '<random_name>.jpg'
+                allow_stretch: False
+            Image:
+                id: img2
+                source: '<random_name>.jpg'
+                allow_stretch: False
+        GridLayout:
+            id: limitgridmain
+            size_hint_y:.5
+            rows: 1
+            cols: 3
+            canvas:
+                Color:
+                    rgba: .8, .8, .8, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.width, self.height
+            GridLayout:
+                id: left
+                rows: 1
+                cols: 1
+                canvas:
+                    Color:
+                        rgba: 0, .37, .45, 1
+                    Rectangle:
+                        pos: self.width*0, left.height*0
+                        size: self.width*1, self.height*1
+                FloatLayout:
+                    canvas:
+                    Circleswitch:
+                        pos_hint:{'x': 0,'y': .4}
+                        id: L1
+                    FloatLayout:
+                        canvas:
+                        Circleswitch:
+                            pos_hint:{'x': .49,'y': .3}
+                            id: L2
+                    FloatLayout:
+                        canvas:
+                        Circleswitch:
+                            pos_hint:{'x': -.4,'y': .3}
+                            id: L3
+                    FloatLayout:
+                        canvas:
+                        Circleswitch:
+                            pos_hint:{'x': 0,'y': -.4}
+                            id: L4
+                    FloatLayout:
+                        canvas:
+                        Brackets:
+                            pos_hint:{'x': -.3,'y': -.2}
+                            id: B1
+                    FloatLayout:
+                        canvas:
+                        Brackets:
+                            pos_hint:{'x': .35,'y': -.2}
+                            id: B2
+                    FloatLayout:
+                        canvas:
+                        Extension:
+                            pos_hint:{'x': .30,'y': -.1}
+                            id: Ext1
+                    FloatLayout:
+                        canvas:
+                        Extension:
+                            pos_hint:{'x': -.25,'y': -.1}
+                            id: Ext2
+                    FloatLayout:
+                        canvas:
+                        Transverse:
+                            pos_hint:{'x': -.185,'y': .12}
+                            id: Trns
+                    FloatLayout:
+                        canvas:
+                        Hole:
+                            pos_hint:{'x': -.05,'y': .14}
+                            id: holeleft
+            GridLayout:
+                id: center
+                rows: 1
+                cols: 1
+                canvas:
+                    Color:
+                        rgba: 0, .5, .5, 1
+                    Rectangle:
+                        pos: self.width*1, center.height*0
+                        size: self.width*1, self.height*1
+                FloatLayout:
+                    canvas:
+                    Vertical:
+                        pos_hint: {'x': 0, 'y': 0}
+                        id: vertical
+                    Circleswitch:
+                        pos_hint: {'x': .035, 'y': .48}
+                        id: L5top
+                    Circleswitch:
+                        pos_hint: {'x': .035, 'y': -.38}
+                        id: L6bot
+            GridLayout:
+                id: right
+                rows: 1
+                cols: 1
+                canvas:
+                    Color:
+                        rgba: 0, .37, .50, 1
+                    Rectangle:
+                        pos: self.width*2, right.height*0
+                        size: self.width*1, self.height*1
+                FloatLayout:
+                    canvas:
+                    Backplate:
+                        pos_hint:{'x': -.2,'y': -.15}
+                        id: backplate
+                    Circleswitch:
+                        pos_hint: {'x': .045, 'y': .27}
+                        id: L7top
+                    Circleswitch:
+                        pos_hint: {'x': .045, 'y': -.13}
+                        id: L8bot
+                    Circleswitch:
+                        pos_hint: {'x': -.15, 'y': .07}
+                        id: L9left
+                    Circleswitch:
+                        pos_hint: {'x': .25, 'y': .07}
+                        id: L10right
+                    Hall:
+                        pos_hint: {'x': .45, 'y': .07}
+                        id: H1right
+                    Hall:
+                        pos_hint: {'x': -.35, 'y': .07}
+                        id: H2left

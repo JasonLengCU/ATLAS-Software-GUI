@@ -1,30 +1,24 @@
 from kivy.app import App
 from kivy.uix.floatlayout import FloatLayout
 from kivy.clock import Clock
+from kivy.uix.widget import Widget
 from kivy.graphics.texture import Texture
-from kivy.core.image import Image
-from kivy.core.window import Window
 import cv2
-import socket
+import random
+from kivy.core.window import Window
 
 
-def conn():
-    host = "localhost"
-    port = 5555
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    try:
-        s.bind((host, port))
-        print('Port Bound')
-    except socket.error as e:
-        print(str(e))
-    return s
+def vidcap():
+    capture = cv2.VideoCapture(0)
+    # capture = cv2.VideoCapture('udp://192.168.1.10:1234?overrun_nonfatal=1&fifo_size=50000000?buffer_size=10000000',cv2.CAP_FFMPEG)
+    capture.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+    return capture
 
 
 class GUIWidget(FloatLayout):
-    capture = cv2.VideoCapture(-1)
+    capture = vidcap()
     # initialization of key press check list
     Push = [0,0, 0,0, 0,0, 0,0, 0,0, 0,0]
-    s = conn()
 
     def __init__(self, **kwargs):
         super(GUIWidget, self).__init__(**kwargs)
@@ -84,7 +78,6 @@ class GUIWidget(FloatLayout):
             self.Push[11] = True
 
     def update(self, dt):
-        # print(cv2.VideoCapture.isOpened(self.capture))
         # Camera 1
         # read in frame
         ret, frame1 = self.capture.read()
@@ -100,10 +93,6 @@ class GUIWidget(FloatLayout):
             texture1.blit_buffer(buft1, colorfmt='bgr', bufferfmt='ubyte')
             # display image from the texture
             self.ids.img1.texture = texture1
-        else:
-            texture = Image('NoConnection.png').texture
-            self.ids.img1.texture = texture
-
         # Camera 2
         # read in frame
         ret, frame2 = self.capture.read()
@@ -120,9 +109,6 @@ class GUIWidget(FloatLayout):
             texture2.blit_buffer(buft2, colorfmt='bgr', bufferfmt='ubyte')
             # display image from the texture
             self.ids.img2.texture = texture2
-        else:
-            texture = Image('NoConnection.png').texture
-            self.ids.img2.texture = texture
         cmdout = 'p'
         if sum(self.Push) <= 1:
             # command w
@@ -198,14 +184,6 @@ class GUIWidget(FloatLayout):
             else:
                 self.ids.L10right.col = 0, 1, 0, 1
         print(cmdout)
-        self.s.sendto(cmdout.encode('utf-8'), ("127.0.0.1", 5555))
-
-    def vidupdate(self,dt):
-        if not cv2.VideoCapture.isOpened(self.capture):
-            self.capture = cv2.VideoCapture(0)
-            # self.capture = cv2.VideoCapture('udp://192.168.1.10:1234?overrun_nonfatal=1&fifo_size=50000000?buffer_size=10000000',cv2.CAP_FFMPEG)
-            self.capture.set(cv2.CAP_PROP_BUFFERSIZE, 1)
-            print('Reconnecting')
 
 
 class GUIApp(App):
@@ -214,7 +192,6 @@ class GUIApp(App):
     def build(self):
         gui = GUIWidget()
         Clock.schedule_interval(gui.update, 1.0/30)
-        Clock.schedule_interval(gui.vidupdate, 1.0/30)
         return gui
 
 
