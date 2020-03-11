@@ -1,10 +1,9 @@
 import socket
 
-UDP_IP = "127.0.0.1"
-UDP_PORT = 5555
-sock = socket.socket(socket.AF_INET, # Internet
-                     socket.SOCK_DGRAM) # UDP
-sock.bind((UDP_IP, UDP_PORT))
+TCP_IP = "127.0.0.1"
+TCP_PORT = 5555
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # UDP
+sock.connect((TCP_IP, TCP_PORT))
 
 while True:
     data, addr = sock.recvfrom(1024)
